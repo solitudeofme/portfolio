@@ -1,11 +1,20 @@
+import NavItem from "./NavItem";
 export default function Nav() {
   return (
-    <nav className="border border-yellow-500">
-      <ul className="text-white font-montserrat-black text-6xl ">
-        <li>Home</li>
-        <li>About</li>
-        <li>Project</li>
-        <li>Contact</li>
+    <nav>
+      <ul className=" flex items-center gap-8 text-white text-xl font-montserrat-bold child-hover:text-pink-700 child-hover:transition-colors">
+        <li>
+          <NavItem messege={"Home"} />
+        </li>
+        <li>
+          <NavItem messege={"About"} />
+        </li>
+        <li>
+          <NavItem messege={"Projects"} />
+        </li>
+        <li>
+          <NavItem messege={"Contact"} />
+        </li>
       </ul>
     </nav>
   );
