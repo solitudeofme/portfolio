@@ -4,7 +4,6 @@
 @custom-variant child (&>*);
 @custom-variant child-hover (& > *:hover);
 @custom-variant parent (&);
-
 @theme {
   --font-montserrat-thin: "Montserrat Thin";
   --font-montserrat-bold: "Montserrat Bold";

@@ -23,22 +23,23 @@ export default function Nav() {
       {/* Mobile Nav */}
       <div className="block sm:hidden  relative">
         <NavToggleBtn toggle={() => setIsOpen(!isOpen)} />
-        {isOpen && (
-          <ul className="w-44 h-40 text-white text-lg rounded-xl overflow-hidden child:text-center space-y-3 flex flex-col justify-center child:flex-center absolute top-14 right-0 border border-primarycolor bg-black transition-all duration-500">
-            <li>
-              <NavItem messege={"Home"} />
-            </li>
-            <li>
-              <NavItem messege={"About"} />
-            </li>
-            <li>
-              <NavItem messege={"Projects"} />
-            </li>
-            <li>
-              <NavItem messege={"Contact"} />
-            </li>
-          </ul>
-        )}
+        <ul
+          className={`w-44 transition-all duration-500 text-white text-lg child:flex-center rounded-xl overflow-hidden space-y-3 flex flex-col justify-center absolute top-14 right-0 border border-primarycolor bg-black 
+        ${isOpen ? "opacity-100 h-40" : "opacity-0 h-0"}`}
+        >
+          <li>
+            <NavItem messege="Home" />
+          </li>
+          <li>
+            <NavItem messege="About" />
+          </li>
+          <li>
+            <NavItem messege="Projects" />
+          </li>
+          <li>
+            <NavItem messege="Contact" />
+          </li>
+        </ul>
       </div>
     </nav>
   );
