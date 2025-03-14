@@ -65,23 +65,25 @@
 }
 
 @layer components {
-  .nav-hover-effect::before {
-    content: "";
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    @apply bg-pink-800;
-    transition: 0.4s transform ease;
-    transform: scale3d(0, 1, 1);
-    transform-origin: 50% 50%;
-  }
-  .nav-hover-effect:hover::before {
-    transform: scale3d(1, 1, 1);
+  @variant sm {
+    .nav-hover-effect::before {
+      content: "";
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      @apply bg-pink-800;
+      transition: 0.4s transform ease;
+      transform: scale3d(0, 1, 1);
+      transform-origin: 50% 50%;
+    }
+    .nav-hover-effect:hover::before {
+      transform: scale3d(1, 1, 1);
+    }
   }
 }
 
 @utility container {
-  @apply mx-auto px-27;
+  @apply mx-auto px-5 xl:px-27;
 }
