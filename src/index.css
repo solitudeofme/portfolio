@@ -3,3 +3,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 @custom-variant child (&>*);
 @custom-variant child-hover (& > *:hover);
+
+@layer base {
+  body {
+    @apply bg-black;
+  }
+}
