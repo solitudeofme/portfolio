@@ -1,10 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBarsStaggered, faXmark } from "@fortawesome/free-solid-svg-icons";
-
-export default function NavToggleButton({ isOpen, toggle }) {
+export default function NavToggleButton({ toggle }) {
   return (
-    <button className="text-pink-800 text-4xl" onClick={toggle}>
-      <FontAwesomeIcon icon={isOpen ? faXmark : faBarsStaggered} />
-    </button>
+    <label className="navToggleBtn">
+      <input type="checkbox" onClick={toggle} />
+    </label>
   );
 }

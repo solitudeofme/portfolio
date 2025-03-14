@@ -12,6 +12,7 @@
   --font-onest-regular: "Onest Regular";
   --font-onest-medium: "Onest Medium";
   --font-onest-semibold: "Onest SemiBold";
+  --color-primarycolor: oklch(0.525 0.223 3.958);
 }
 
 @layer base {
@@ -62,6 +63,16 @@
     src: local("Onest SemiBold"),
       url("/fonts/Onest/Onest-SemiBold.ttf") format("truetype");
   }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
 @layer components {
@@ -73,7 +84,7 @@
       position: absolute;
       left: 0;
       bottom: -6px;
-      @apply bg-pink-800;
+      @apply bg-primarycolor;
       transition: 0.4s transform ease;
       transform: scale3d(0, 1, 1);
       transform-origin: 50% 50%;
@@ -81,6 +92,33 @@
     .nav-hover-effect:hover::before {
       transform: scale3d(1, 1, 1);
     }
+  }
+  .navToggleBtn {
+    @apply flex flex-col justify-center gap-y-1.5 w-max h-10;
+  }
+  .navToggleBtn input {
+    appearance: none;
+    pointer-events: none;
+    @apply translate-x-1;
+  }
+  .navToggleBtn::before,
+  .navToggleBtn::after,
+  .navToggleBtn input {
+    content: "";
+    @apply block w-8 h-1 rounded-2xl bg-primarycolor transition-all duration-500 origin-left;
+  }
+  .navToggleBtn input:checked {
+    @apply opacity-0 w-0 origin-right;
+  }
+  .navToggleBtn:has(input:checked)::before {
+    rotate: 45deg;
+    width: calc(24px * 1.4142);
+    @apply -translate-y-0.5;
+  }
+  .navToggleBtn:has(input:checked)::after {
+    rotate: -45deg;
+    width: calc(24px * 1.4142);
+    @apply translate-y-0.5;
   }
 }
 
