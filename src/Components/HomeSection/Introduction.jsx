@@ -1,4 +1,5 @@
 import { Typewriter } from "react-simple-typewriter";
+import ShinyTextBtn from "../Buttons/ShinyTextBtn";
 export default function Introdunction() {
   return (
     <div className="absolute space-y-3 top-30 left-1/5 sm:top-1/4 sm:left-[8%] w-[75%] sm:w-1/2 lg:w-1/3">
@@ -23,6 +24,10 @@ export default function Introdunction() {
         on other front-end technologies too. Oh, and UI/UX? Let’s just say I
         won’t let my work dress badly.
       </p>
+      <ShinyTextBtn
+        text={"Get my resume!"}
+        className={"mt-16 mx-auto sm:mx-0 block"}
+      />
     </div>
   );
 }
