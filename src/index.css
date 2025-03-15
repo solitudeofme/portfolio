@@ -12,6 +12,15 @@
   --font-onest-medium: "Onest Medium";
   --font-onest-semibold: "Onest SemiBold";
   --color-primarycolor: oklch(0.525 0.223 3.958);
+  --animate-shine: shine 2s infinite linear;
+  @keyframes shine {
+    0% {
+      background-position: 100%;
+    }
+    100% {
+      background-position: -100%;
+    }
+  }
 }
 
 @layer base {
@@ -70,6 +79,14 @@
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+  @keyframes shine {
+    0% {
+      background-position: 100%;
+    }
+    100% {
+      background-position: -100%;
     }
   }
 }
