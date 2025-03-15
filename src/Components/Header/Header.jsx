@@ -1,4 +1,4 @@
-import Nav from "./nav";
+import Nav from "./Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSkull } from "@fortawesome/free-solid-svg-icons";
 export default function Header() {
