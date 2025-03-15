@@ -1,6 +1,7 @@
 import NavItem from "./NavItem";
 import { useState } from "react";
 import NavToggleBtn from "./NavToggleBtn";
+import SwitchLanBtn from "../SwitchLanBtn/SwitchLanBtn";
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -24,7 +25,7 @@ export default function Nav() {
       <div className="block sm:hidden  relative">
         <NavToggleBtn toggle={() => setIsOpen(!isOpen)} />
         <ul
-          className={`w-44 transition-all duration-500 text-white text-lg child:flex-center rounded-xl overflow-hidden space-y-3 flex flex-col justify-center absolute top-14 right-0 border border-primarycolor bg-black 
+          className={`w-44 transition-all duration-600 text-white text-lg child:flex-center rounded-xl overflow-hidden space-y-3 flex flex-col justify-center absolute top-14 right-0 border border-primarycolor bg-black 
         ${isOpen ? "opacity-100 h-40" : "opacity-0 h-0"}`}
         >
           <li>
