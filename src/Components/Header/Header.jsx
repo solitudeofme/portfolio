@@ -8,7 +8,7 @@ export default function Header() {
         <div>
           <FontAwesomeIcon
             icon={faSkull}
-            className="text-pink-800 text-4xl"
+            className="text-primarycolor text-4xl"
           ></FontAwesomeIcon>
         </div>
         <Nav />
