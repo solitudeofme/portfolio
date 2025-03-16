@@ -5,7 +5,7 @@ export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const sections = [
     { message: "Home", section: "#homesection" },
-    { message: "About", section: "#skillsection" },
+    { message: "Skills", section: "#skillsection" },
     { message: "Projects", section: "#projectsection" },
     { message: "Contact", section: "#contact" },
   ];
