@@ -9,12 +9,16 @@ export default function Contact() {
   const socialmedias = [
     {
       socialmediaLink:
-        "https://www.linkedin.com/in/niloufar-ostadmohammadi-1b4728300?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "https://www.linkedin.com/in/niloufar-ostadmohammadi-1b4728300",
       icon: faLinkedin,
     },
     { socialmediaLink: "https://t.me/solitudeofme", icon: faTelegram },
     { socialmediaLink: "https://github.com/solitudeofme", icon: faGithub },
-    { socialmediaLink: "", icon: faInstagram },
+    {
+      socialmediaLink:
+        "https://www.instagram.com/emptyy178?igsh=YjNwa3JuY2ZuaHJ4",
+      icon: faInstagram,
+    },
   ];
   return (
     <section className="container section-pt" id="contact">
