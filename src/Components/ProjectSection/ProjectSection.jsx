@@ -54,7 +54,7 @@ export default function ProjectSection() {
   ];
 
   return (
-    <section id="projectsection" className="py-24">
+    <section id="projectsection" className="section-pt">
       <div className="container">
         <h1 className="section-title">Projects</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-20">
