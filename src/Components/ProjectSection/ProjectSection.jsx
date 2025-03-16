@@ -18,7 +18,7 @@ export default function ProjectSection() {
     {
       projectTitle: "Avita",
       src: "project3.png",
-      projectGithub: "https://github.com/solitudeofme/Avita",
+      projectGithub: "https://github.com/solitudeofme/Avita-project-onepage",
       projectLink: "https://radiant-dusk-b85fcc.netlify.app/",
     },
     {
