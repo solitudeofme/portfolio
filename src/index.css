@@ -12,7 +12,9 @@
   --font-onest-medium: "Onest Medium";
   --font-onest-semibold: "Onest SemiBold";
   --color-primarycolor: oklch(0.525 0.223 3.958);
+  --shadow-white: 0px 5px 10px 0px oklch(0.525 0.223 3.958);
   --animate-shine: shine 2s infinite linear;
+  --breakpoint-xs: 25rem;
   @keyframes shine {
     0% {
       background-position: 100%;
@@ -143,4 +145,12 @@
 }
 @utility flex-center {
   @apply flex justify-center items-center;
+}
+@utility shadow-white {
+  @variant sm {
+    @variant hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 10px 20px 2px oklch(0.525 0.223 3.958);
+    }
+  }
 }
