@@ -1,12 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function Skill({ icon, bgColor, skillTitle }) {
+export default function Skill({ icon, skillTitle }) {
   return (
     <div
       className={
-        "bg-" +
-        bgColor +
-        " flex-center aspect-3/2 rounded-4xl shadow-white font-onest-semibold flex gap-1.5"
+        "bg-effect flex-center aspect-3/2 rounded-4xl shadow-white font-onest-semibold flex gap-1.5"
       }
     >
       <FontAwesomeIcon
