@@ -13,7 +13,7 @@ export default function Contact() {
     { socialmediaLink: "", icon: faTelegram },
   ];
   return (
-    <section className="container section-pt" id="#contact">
+    <section className="container section-pt" id="contact">
       <div className=" bg-white/5 min-h-96 w-full grid grid-cols-1 sm:grid-cols-2 gap-10 p-5 sm:p-20">
         <div>
           <h2 className="font-montserrat-black text-4xl text-white">
