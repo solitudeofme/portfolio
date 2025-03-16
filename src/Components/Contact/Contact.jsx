@@ -7,10 +7,14 @@ import {
 import Socialmedia from "./Socialmedia";
 export default function Contact() {
   const socialmedias = [
-    { socialmediaLink: "", icon: faLinkedin },
+    {
+      socialmediaLink:
+        "https://www.linkedin.com/in/niloufar-ostadmohammadi-1b4728300?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      icon: faLinkedin,
+    },
+    { socialmediaLink: "https://t.me/solitudeofme", icon: faTelegram },
+    { socialmediaLink: "https://github.com/solitudeofme", icon: faGithub },
     { socialmediaLink: "", icon: faInstagram },
-    { socialmediaLink: "", icon: faGithub },
-    { socialmediaLink: "", icon: faTelegram },
   ];
   return (
     <section className="container section-pt" id="contact">
@@ -26,9 +30,9 @@ export default function Contact() {
             —whether it's freelance projects, collaborations, or full-time
             roles. If you need a dedicated front-end developer to bring your
             ideas to life, I'd love to help!
-            <div className="mt-3">
+            <span className="mt-3">
               Reach out, and let’s discuss how we can make something incredible!
-            </div>
+            </span>
           </p>
         </div>
         <div className="flex-center flex-wrap gap-6 sm:gap-13 ">
