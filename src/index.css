@@ -12,6 +12,7 @@
   --font-onest-medium: "Onest Medium";
   --font-onest-semibold: "Onest SemiBold";
   --color-primarycolor: oklch(0.525 0.223 3.958);
+  --color-primarycolordarker: oklch(0.408 0.153 2.432);
   --shadow-white: 0px 0px 35px 0px rgb(225, 225, 225, 0.2);
   --animate-shine: shine 2s infinite linear;
   --breakpoint-xs: 25rem;
@@ -31,6 +32,9 @@
   }
   body {
     @apply bg-black;
+    @variant selection {
+      @apply bg-primarycolordarker text-black;
+    }
   }
   @font-face {
     font-family: "Montserrat Thin";
