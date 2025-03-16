@@ -12,7 +12,7 @@ import Skill from "./Skill";
 import { faCircleNodes, faWater } from "@fortawesome/free-solid-svg-icons";
 export default function SkillSection() {
   return (
-    <section className="section-pt">
+    <section id="skillsection" className="section-pt">
       <div className="container">
         <h1 className="section-title">Tech Stack</h1>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-10 sm:gap-15">

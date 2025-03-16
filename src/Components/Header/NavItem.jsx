@@ -1,8 +1,8 @@
-export default function NavItem({ messege }) {
+export default function NavItem({ message, section }) {
   return (
     <>
-      <a href="#" className="sm:relative nav-hover-effect">
-        {messege}
+      <a href={section} className="sm:relative nav-hover-effect">
+        {message}
       </a>
     </>
   );

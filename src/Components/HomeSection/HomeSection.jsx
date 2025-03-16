@@ -13,7 +13,7 @@ export default function HomeSection() {
   }, []);
 
   return (
-    <div className="w-full h-dvh relative">
+    <section id="homesection" className="w-full h-dvh relative">
       <Lightning
         hue={336}
         xOffset={isSmallScreen ? 1.4 : -1}
@@ -22,6 +22,6 @@ export default function HomeSection() {
         size={3}
       />
       <Introdunction />
-    </div>
+    </section>
   );
 }

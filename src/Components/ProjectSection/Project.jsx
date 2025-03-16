@@ -1,10 +1,9 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ProjectBtn from "../Buttons/ProjectBtn";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 export default function Project({
-  projectImg,
+  src,
   projectTitle,
   projectLink = false,
   projectGithub = "#",
@@ -25,7 +24,7 @@ export default function Project({
         className="rounded-xl mb-4 overflow-hidden block"
       >
         <img
-          src={"../../img/" + projectImg}
+          src={"../../img/projectImages/" + src}
           alt={projectTitle}
           loading="lazy"
           className="rounded-lg transition-transform duration-500 hover:scale-105"
