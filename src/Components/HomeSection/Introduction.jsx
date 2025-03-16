@@ -1,6 +1,15 @@
 import { Typewriter } from "react-simple-typewriter";
 import ShinyTextBtn from "../Buttons/ShinyTextBtn";
 export default function Introdunction() {
+  const handleDownload = () => {
+    const resumeUrl = "/resume.pdf";
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "Niloufar_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div className="absolute space-y-3 top-30 left-1/5 sm:top-1/4 sm:left-[8%] w-[75%] sm:w-1/2 lg:w-1/3">
       <h2 className="text-primarycolor text-3xl sm:text-5xl font-montserrat-black">
@@ -27,6 +36,7 @@ export default function Introdunction() {
       <ShinyTextBtn
         text={"Get my resume!"}
         className={"mt-16 mx-auto sm:mx-0 block"}
+        clickEvent={handleDownload}
       />
     </div>
   );

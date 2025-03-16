@@ -1,5 +1,5 @@
 import ShinyText from "../../TextAnimations/ShinyText/ShinyText";
-export default function ShinyTextBtn({ text, className }) {
+export default function ShinyTextBtn({ text, className, clickEvent }) {
   return (
     <button
       className={
@@ -7,6 +7,7 @@ export default function ShinyTextBtn({ text, className }) {
         " " +
         className
       }
+      onClick={clickEvent}
     >
       <ShinyText speed={1} text={text} className={"uppercase "} />
     </button>

@@ -14,8 +14,8 @@ export default function Nav() {
       <ul className="hidden sm:flex  items-center gap-8 text-white text-xl font-montserrat-bold child-hover:text-primarycolor child-hover:transition-colors">
         {/* Desktop Nav */}
         {sections.map((section, index) => (
-          <li>
-            <NavItem key={index} {...section} />
+          <li key={index}>
+            <NavItem {...section} />
           </li>
         ))}
       </ul>
@@ -27,8 +27,8 @@ export default function Nav() {
         ${isOpen ? "opacity-100 h-40" : "opacity-0 h-0"}`}
         >
           {sections.map((section, index) => (
-            <li>
-              <NavItem key={index} {...section} />
+            <li key={index}>
+              <NavItem {...section} />
             </li>
           ))}
         </ul>

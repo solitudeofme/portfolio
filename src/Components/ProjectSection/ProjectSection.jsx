@@ -6,7 +6,7 @@ export default function ProjectSection() {
       projectTitle: "My Portfolio",
       src: "project1.png",
       projectGithub: "https://github.com/solitudeofme/portfolio",
-      projectLink: null,
+      projectLink: "#",
     },
     {
       projectTitle: "Coffee-shop",
