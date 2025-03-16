@@ -12,7 +12,7 @@
   --font-onest-medium: "Onest Medium";
   --font-onest-semibold: "Onest SemiBold";
   --color-primarycolor: oklch(0.525 0.223 3.958);
-  --shadow-white: 0px 5px 10px 0px oklch(0.525 0.223 3.958);
+  --shadow-white: 0px 0px 35px 0px rgb(225, 225, 225, 0.2);
   --animate-shine: shine 2s infinite linear;
   --breakpoint-xs: 25rem;
   @keyframes shine {
@@ -149,8 +149,20 @@
 @utility shadow-white {
   @variant sm {
     @variant hover {
-      transform: translateY(-5px);
-      box-shadow: 0px 10px 20px 2px oklch(0.525 0.223 3.958);
+      box-shadow: 0px 0px 10px 0px rgb(225, 225, 225, 0.2);
     }
   }
+}
+@utility section-title {
+  @apply font-montserrat-black text-white mb-15 text-center text-3xl;
+}
+@utility section-pt {
+  @apply pt-24;
+}
+@utility bg-effect {
+  background: radial-gradient(
+    circle at center,
+    rgba(225, 255, 225, 0.05),
+    rgba(0, 0, 0, 1)
+  );
 }
